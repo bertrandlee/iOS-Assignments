@@ -143,7 +143,7 @@ class ViewController: UIViewController {
     
     @IBAction func onWalkButtonPressed(sender: AnyObject)
     {
-        if (totalScore < 21)
+        if (totalScore <= 21)
         {
             // Update UI elements if user decides to walk
             statusLabel.text = "Walked with " + String(totalScore)
